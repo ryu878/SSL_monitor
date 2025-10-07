@@ -45,6 +45,7 @@ try:
 except Exception:
     requests = None  # Telegram alerts will require 'requests'
 
+
 def fetch_certificate_pem(host: str, port: int = 443, timeout: float = 5.0) -> str:
     """Fetch the server certificate in PEM format using ssl.get_server_certificate."""
     try:
@@ -52,6 +53,7 @@ def fetch_certificate_pem(host: str, port: int = 443, timeout: float = 5.0) -> s
         return pem
     except Exception as e:
         raise RuntimeError(f"Failed to get certificate from {host}:{port} — {e}")
+
 
 def parse_certificate(pem_data: str):
     """Parse PEM certificate and return x509 object and useful fields."""
@@ -75,11 +77,13 @@ def parse_certificate(pem_data: str):
         "sans": sans,
     }
 
+
 def days_until(dt: datetime) -> int:
     """Return number of whole days from now (UTC) until dt. Negative if expired."""
     now = datetime.now(timezone.utc)
     delta = dt - now
     return int(delta.total_seconds() // 86400)
+
 
 def send_email(smtp_server, smtp_port, smtp_user, smtp_pass, sender, recipients, subject, body, use_tls=True):
     msg = EmailMessage()
@@ -98,6 +102,7 @@ def send_email(smtp_server, smtp_port, smtp_user, smtp_pass, sender, recipients,
     except Exception as e:
         raise RuntimeError(f"Failed to send email: {e}")
 
+
 def send_telegram(bot_token: str, chat_id: str, text: str):
     if requests is None:
         raise RuntimeError("To send Telegram messages install the requests package: pip install requests")
@@ -107,6 +112,7 @@ def send_telegram(bot_token: str, chat_id: str, text: str):
     if not r.ok:
         raise RuntimeError(f"Telegram API returned {r.status_code}: {r.text}")
     return r.json()
+
 
 def build_report(host, port, info, days_left) -> str:
     lines = []
@@ -119,6 +125,7 @@ def build_report(host, port, info, days_left) -> str:
     if info["sans"]:
         lines.append("SANs: " + ", ".join(info["sans"]))
     return "\n".join(lines)
+
 
 def main():
     parser = argparse.ArgumentParser(description="SSL certificate monitor")
