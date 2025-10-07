@@ -170,3 +170,11 @@ python3 ssl_monitor.py --host aadresearch.xyz --warn-days 15
 ```
 
 If it exits with code 1, trigger your alert rule.
+
+## Contacts
+I develop trading bots of any complexity, dashboards and indicators for crypto exchanges, forex and stocks.
+To contact me please pm:
+
+Telegram: https://t.me/ryu8777
+
+Discord: https://discord.gg/zSw58e9Uvf
