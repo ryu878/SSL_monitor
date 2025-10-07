@@ -26,6 +26,8 @@ Clone the repository and install dependencies:
 ```
 git clone https://github.com/yourusername/ssl-monitor.git
 cd ssl-monitor
+conda create --name ssl-monitor -c conda-forge python=3.11
+conda activate monitor
 pip install -r requirements.txt
 ```
 
