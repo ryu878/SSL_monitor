@@ -24,10 +24,10 @@ This script is perfect for DevOps, sysadmins, and developers who need to ensure 
 Clone the repository and install dependencies:
 
 ```
-git clone https://github.com/yourusername/ssl-monitor.git
+git clone https://github.com/ryu878/SSL_monitor.git
 cd ssl-monitor
 conda create --name ssl-monitor -c conda-forge python=3.11
-conda activate monitor
+conda activate ssl-monitor
 pip install -r requirements.txt
 ```
 
