@@ -60,14 +60,18 @@ def parse_certificate(pem_data: str):
     cert = x509.load_pem_x509_certificate(pem_data.encode("utf-8"), default_backend())
     subject = cert.subject.rfc4514_string()
     issuer = cert.issuer.rfc4514_string()
-    not_before = cert.not_valid_before.replace(tzinfo=timezone.utc)
-    not_after = cert.not_valid_after.replace(tzinfo=timezone.utc)
+
+    # Use timezone-aware datetime properties (no deprecation warning)
+    not_before = cert.not_valid_before_utc
+    not_after = cert.not_valid_after_utc
+
     # subject alternative names (SANs)
     try:
         ext = cert.extensions.get_extension_for_class(x509.SubjectAlternativeName)
         sans = ext.value.get_values_for_type(x509.DNSName)
     except Exception:
         sans = []
+
     return {
         "cert": cert,
         "subject": subject,
