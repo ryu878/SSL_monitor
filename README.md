@@ -171,6 +171,7 @@ python3 ssl_monitor.py --host aadresearch.xyz --warn-days 15
 
 If it exits with code 1, trigger your alert rule.
 
+***
 
 ## 📄 License
 MIT License - Feel free to modify and distribute.
