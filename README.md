@@ -215,5 +215,5 @@ Experience across crypto (CEX, DEX), FX, and exchange-traded markets.
 ## Contact
 
 Email: ryu8777@gmail.com
-
+Linkedin: linkedin.com/in/dimitri-salnikov
 ***
