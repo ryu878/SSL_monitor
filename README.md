@@ -207,10 +207,10 @@ Experience across crypto (CEX, DEX), FX, and exchange-traded markets.
 
 ## Technical Stack
 
-- Languages: Python, C++, MQL5
-- Execution & Connectivity: REST, WebSocket, FIX
-- Infrastructure: Linux, Docker, Redis, PostgreSQL, ClickHouse
-- Analytics: NumPy, Pandas, custom backtesting frameworks
+- **Languages:** Python, C++, MQL5
+- **Execution & Connectivity:** REST, WebSocket, FIX
+- **Infrastructure:** Linux, Docker, Redis, PostgreSQL, ClickHouse
+- **Analytics:** NumPy, Pandas, custom backtesting frameworks
 
 ## Contact
 
