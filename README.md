@@ -215,7 +215,4 @@ Core focus areas:
 ## Contact
 
 **Email:** ryu8777@gmail.com
-
-**LinkedIn:** [linkedin.com/in/dimitri-salnikov](https://linkedin.com/in/dimitri-salnikov)
-
 ***
