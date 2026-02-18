@@ -192,18 +192,18 @@ Contributions, issues, and feature requests are welcome! Feel free to check issu
 
 ## 📌 Quantitative Researcher | Algorithmic Trader | Trading Systems Architect
 
-Quantitative researcher and trading systems engineer with end-to-end ownership of systematic strategies — from research and statistical validation to low-latency execution and production deployment.
+Quantitative researcher and trading systems engineer with end-to-end ownership of systematic strategies — from research and statistical validation to execution architecture and 24/7 production deployment.
+
+Experience across crypto (CEX/DEX), FX, and exchange-traded markets.
 
 Core focus areas:
-- Systematic strategy design and validation
-- Market microstructure analysis (order book dynamics, liquidations, volume, delta, liquidity, spread behavior, funding)
-- Backtesting framework development (tick-level and historical data)
+- Systematic strategy design, validation, and robustness testing
+- Market microstructure analysis (order book dynamics, liquidity, spread behavior, funding, volume delta)
+- Tick-level and historical backtesting framework development
 - Execution engine architecture and order lifecycle management
-- Real-time market data processing
-- Risk-aware system design
-- Production-grade trading infrastructure (24/7 environments)
-
-Experience across crypto (CEX, DEX), FX, and exchange-traded markets.
+- Real-time market data processing pipelines
+- Risk-aware system design and capital efficiency
+- Production-grade trading infrastructure
 
 ## Technical Stack
 
@@ -215,6 +215,7 @@ Experience across crypto (CEX, DEX), FX, and exchange-traded markets.
 ## Contact
 
 **Email:** ryu8777@gmail.com
+
 **LinkedIn:** [linkedin.com/in/dimitri-salnikov](https://linkedin.com/in/dimitri-salnikov)
 
 ***
