@@ -189,7 +189,7 @@ Contributions, issues, and feature requests are welcome! Feel free to check issu
 > Under no circumstances will I be responsible or liable for any claims, damages, losses, expenses, costs, or liabilities of any kind, including but not limited to direct or indirect damages for loss of profits.
 
 ***
-
+### About
 ## 📌 Quantitative Researcher | Algorithmic Trader | Trading Systems Architect
 
 Quantitative researcher and trading systems engineer with end-to-end ownership of systematic strategies — from research and statistical validation to execution architecture and 24/7 production deployment.
